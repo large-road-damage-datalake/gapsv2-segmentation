@@ -8,7 +8,7 @@
   "polygons": [
     {
       "id": 1,
-      "label": "crack",
+      "label": "inlaid_patch",
       "area_px": 31504.0,
       "bbox": [
         815,
@@ -37,7 +37,7 @@
     },
     {
       "id": 2,
-      "label": "crack",
+      "label": "inlaid_patch",
       "area_px": 34299.0,
       "bbox": [
         90,

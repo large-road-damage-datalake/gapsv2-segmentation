@@ -8,7 +8,7 @@
   "polygons": [
     {
       "id": 1,
-      "label": "crack",
+      "label": "applied_patch",
       "area_px": 28721.0,
       "bbox": [
         648,
@@ -149,7 +149,7 @@
     },
     {
       "id": 2,
-      "label": "crack",
+      "label": "applied_patch",
       "area_px": 28997.0,
       "bbox": [
         854,
@@ -258,7 +258,7 @@
     },
     {
       "id": 3,
-      "label": "crack",
+      "label": "pothole",
       "area_px": 4488.0,
       "bbox": [
         182,
