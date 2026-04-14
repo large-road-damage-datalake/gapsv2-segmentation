@@ -1,0 +1,61 @@
+{
+  "columns": [
+    "Class",
+    "Images",
+    "Objects",
+    "Count on image, average",
+    "Area on image, average (%)"
+  ],
+  "data": [
+    [
+      "crack",
+      1884,
+      1884,
+      1.0,
+      3.1676
+    ],
+    [
+      "street_inventory",
+      1479,
+      1479,
+      1.0,
+      6.6989
+    ],
+    [
+      "applied_patch",
+      249,
+      249,
+      1.0,
+      3.1397
+    ],
+    [
+      "pothole",
+      244,
+      244,
+      1.0,
+      0.7909
+    ],
+    [
+      "inlaid_patch",
+      165,
+      165,
+      1.0,
+      3.2063
+    ],
+    [
+      "open_joint",
+      158,
+      158,
+      1.0,
+      1.4854
+    ]
+  ],
+  "description": "Images column counts images containing at least one object of class.",
+  "options": {
+    "sort": {
+      "columnIndex": 2,
+      "order": "desc"
+    },
+    "pageSize": 100
+  }
+}

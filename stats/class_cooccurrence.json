@@ -1,0 +1,63 @@
+{
+  "type": "matrix",
+  "labels": [
+    "applied_patch",
+    "crack",
+    "inlaid_patch",
+    "open_joint",
+    "pothole",
+    "street_inventory"
+  ],
+  "data": [
+    [
+      249,
+      216,
+      18,
+      7,
+      58,
+      173
+    ],
+    [
+      216,
+      1884,
+      119,
+      104,
+      227,
+      1140
+    ],
+    [
+      18,
+      119,
+      165,
+      42,
+      14,
+      83
+    ],
+    [
+      7,
+      104,
+      42,
+      158,
+      15,
+      100
+    ],
+    [
+      58,
+      227,
+      14,
+      15,
+      244,
+      103
+    ],
+    [
+      173,
+      1140,
+      83,
+      100,
+      103,
+      1479
+    ]
+  ],
+  "title": "Co-occurrence Matrix",
+  "description": "Cell [i,j] is number of images that contain both classes i and j."
+}

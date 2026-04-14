@@ -1,0 +1,35 @@
+{
+  "type": "treemap",
+  "title": "Average area of class objects on image",
+  "series": [
+    {
+      "data": [
+        {
+          "x": "crack",
+          "y": 3.1676
+        },
+        {
+          "x": "street_inventory",
+          "y": 6.6989
+        },
+        {
+          "x": "applied_patch",
+          "y": 3.1397
+        },
+        {
+          "x": "pothole",
+          "y": 0.7909
+        },
+        {
+          "x": "inlaid_patch",
+          "y": 3.2063
+        },
+        {
+          "x": "open_joint",
+          "y": 1.4854
+        }
+      ]
+    }
+  ],
+  "value_unit": "%"
+}

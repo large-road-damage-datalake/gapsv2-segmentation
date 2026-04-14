@@ -1,0 +1,31 @@
+{
+  "type": "bar",
+  "title": "Class Distribution",
+  "data": {
+    "labels": [
+      "crack",
+      "street_inventory",
+      "applied_patch",
+      "open_joint",
+      "pothole",
+      "inlaid_patch"
+    ],
+    "values": [
+      1884,
+      1479,
+      249,
+      158,
+      244,
+      165
+    ],
+    "total": 4179,
+    "percentages": [
+      45.08,
+      35.39,
+      5.96,
+      3.78,
+      5.84,
+      3.95
+    ]
+  }
+}

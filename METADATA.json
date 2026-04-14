@@ -1,0 +1,217 @@
+{
+  "schema_version": "1.0",
+  "basic_info": {
+    "id": "gapsv2-segmentation",
+    "name": "GAPSv2",
+    "short_name": "gapsv2-seg",
+    "description": "Segmentation packaging of GAPs v2 with pixel-level road-distress and road-surface class masks from top-down imagery.",
+    "year": 2019,
+    "family_name": "GAPs",
+    "subset_name": "v2",
+    "family_description": "GAPs is a German top-down pavement distress dataset family with segmentation labels across multiple subsets (for example 384, v2, and 10m)."
+  },
+  "project_context": {
+    "task": "segmentation",
+    "tasks": [
+      "segmentation"
+    ],
+    "damage_types": [
+      "applied_patch",
+      "crack",
+      "inlaid_patch",
+      "open_joint",
+      "pothole",
+      "street_inventory"
+    ],
+    "task_classification": {
+      "primary_task": "segmentation",
+      "task_subtype": "semantic_segmentation"
+    },
+    "segmentation_type": "semantic_segmentation",
+    "task_subtype": "semantic_segmentation",
+    "family_name": "GAPs",
+    "subset_name": "v2",
+    "family_description": "GAPs is a German top-down pavement distress dataset family with segmentation labels across multiple subsets (for example 384, v2, and 10m)."
+  },
+  "imaging_setup": {
+    "camera": "Surface camera system on certified mobile mapping vehicle",
+    "camera_viewpoint": [
+      "top-down"
+    ],
+    "resolution": "1920x1080",
+    "lighting_conditions": "Vehicle-mounted and outdoor road-surface capture conditions",
+    "capture_height_mm": "Not reported",
+    "geotagged": false,
+    "resolution_details": [
+      {
+        "resolution": "1920x1080",
+        "count": 2410
+      }
+    ]
+  },
+  "annotation_schema": [
+    {
+      "type": "segmentation_mask",
+      "description": "Pixel-level multi-class masks with GAPs v2 gray-value coding",
+      "classes": [
+        {
+          "id": 1,
+          "name": "applied_patch",
+          "description": "GAPSv2 class: applied_patch",
+          "color": "#294F71"
+        },
+        {
+          "id": 2,
+          "name": "crack",
+          "description": "GAPSv2 class: crack",
+          "color": "#529EE2"
+        },
+        {
+          "id": 3,
+          "name": "inlaid_patch",
+          "description": "GAPSv2 class: inlaid_patch",
+          "color": "#7BED54"
+        },
+        {
+          "id": 4,
+          "name": "open_joint",
+          "description": "GAPSv2 class: open_joint",
+          "color": "#A43DC5"
+        },
+        {
+          "id": 5,
+          "name": "pothole",
+          "description": "GAPSv2 class: pothole",
+          "color": "#CD8C37"
+        },
+        {
+          "id": 6,
+          "name": "street_inventory",
+          "description": "GAPSv2 class: street_inventory",
+          "color": "#F6DBA8"
+        }
+      ]
+    }
+  ],
+  "statistics": {
+    "n_images": 2410,
+    "n_annotations": 4179,
+    "n_images_with_annotations": 2273,
+    "average_annotations_per_image": 1.7340248962655602,
+    "dataset_size": "1.60 GB",
+    "dataset_size_bytes": 1719996471,
+    "dataset_file_count": 4820,
+    "image_format": "png_masks",
+    "class_distribution": {
+      "crack": 1884,
+      "street_inventory": 1479,
+      "applied_patch": 249,
+      "open_joint": 158,
+      "pothole": 244,
+      "inlaid_patch": 165
+    },
+    "split": {
+      "data": {
+        "n_images": 2410,
+        "percentage": 1.0,
+        "n_images_with_annotations": 2273,
+        "annotation_coverage": 0.9432,
+        "dataset_size": "1.60 GB",
+        "dataset_size_bytes": 1719996471,
+        "dataset_file_count": 4820
+      }
+    }
+  },
+  "geographic_coverage": {
+    "countries": [
+      {
+        "name": "Germany",
+        "image_count": 2410,
+        "annotated_image_count": 2273,
+        "annotation_coverage": 0.9432
+      }
+    ],
+    "temporal_scope": "GAPs v2 release available by 2019"
+  },
+  "quality_assurance": {
+    "annotation_quality": "Pixel-level masks provided by the official GAPs v2 segmentation release",
+    "inter_annotator_agreement": "Not reported",
+    "review_status": "Published benchmark dataset",
+    "data_acquisition_notes": "Source website describes BASt-certified road monitoring workflow and mobile mapping acquisition process."
+  },
+  "authors": [
+    {
+      "name": "Markus Eisenbach",
+      "affiliation": "Ilmenau University of Technology",
+      "role": "Dataset Creator"
+    },
+    {
+      "name": "Ronny Stricker",
+      "affiliation": "Ilmenau University of Technology",
+      "role": "Dataset Creator"
+    },
+    {
+      "name": "Daniel Seichter",
+      "affiliation": "Ilmenau University of Technology",
+      "role": "Dataset Creator"
+    },
+    {
+      "name": "Karl Amende",
+      "affiliation": "Ilmenau University of Technology",
+      "role": "Dataset Creator"
+    },
+    {
+      "name": "Klaus Debes",
+      "affiliation": "Ilmenau University of Technology",
+      "role": "Dataset Creator"
+    },
+    {
+      "name": "Maximilian Sesselmann",
+      "affiliation": "Ilmenau University of Technology",
+      "role": "Dataset Creator"
+    },
+    {
+      "name": "Dirk Ebersbach",
+      "affiliation": "Ilmenau University of Technology",
+      "role": "Dataset Creator"
+    },
+    {
+      "name": "Ulrike Stoeckert",
+      "affiliation": "Ilmenau University of Technology",
+      "role": "Dataset Creator"
+    },
+    {
+      "name": "Horst-Michael Gross",
+      "affiliation": "Ilmenau University of Technology",
+      "role": "Dataset Creator"
+    }
+  ],
+  "license": "Academic use only; access requires written permission and provider-issued login",
+  "links": {
+    "github": "https://github.com/large-road-damage-datalake/gapsv2-segmentation",
+    "download": "https://www.tu-ilmenau.de/neurob/data-sets-code/german-asphalt-pavement-distress-dataset-gaps",
+    "paper": "https://ieeexplore.ieee.org/abstract/document/7966101",
+    "homepage": "https://www.tu-ilmenau.de/neurob/data-sets-code/german-asphalt-pavement-distress-dataset-gaps",
+    "request_form": "https://www.tu-ilmenau.de/fileadmin/Bereiche/IA/neurob/Datasets/Request-Gaps3.pdf",
+    "request_email": "mailto:nikr-datasets-request@tu-ilmenau.de"
+  },
+  "citation": {
+    "bibtex": "@inproceedings{eisenbach2017how,\n  title = {How to Get Pavement Distress Detection Ready for Deep Learning? A Systematic Approach.},\n  author = {Eisenbach, Markus and Stricker, Ronny and Seichter, Daniel and Amende, Karl and Debes, Klaus and Sesselmann, Maximilian and Ebersbach, Dirk and Stoeckert, Ulrike and Gross, Horst-Michael},\n  booktitle = {International Joint Conference on Neural Networks (IJCNN)},\n  pages = {2039--2047},\n  year = {2017},\n  doi = {10.1109/IJCNN.2017.7966101},\n  url = {https://ieeexplore.ieee.org/abstract/document/7966101}\n}"
+  },
+  "tags": [
+    "segmentation",
+    "gapsv2",
+    "multiclass-mask",
+    "road-distress",
+    "germany",
+    "top-down",
+    "permission-required"
+  ],
+  "source_publication": {
+    "dataset_doi": "Not provided",
+    "article_doi": "10.1109/IJCNN.2017.7966101",
+    "article_title": "How to Get Pavement Distress Detection Ready for Deep Learning? A Systematic Approach.",
+    "journal": "2017 International Joint Conference on Neural Networks (IJCNN)",
+    "year": 2017
+  }
+}

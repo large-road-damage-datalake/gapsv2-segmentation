@@ -1,0 +1,30 @@
+{
+  "generated": true,
+  "dir": "visualizations/spatial_heatmaps",
+  "classes": [
+    {
+      "class": "crack",
+      "file": "visualizations/spatial_heatmaps/crack.png"
+    },
+    {
+      "class": "street_inventory",
+      "file": "visualizations/spatial_heatmaps/street_inventory.png"
+    },
+    {
+      "class": "applied_patch",
+      "file": "visualizations/spatial_heatmaps/applied_patch.png"
+    },
+    {
+      "class": "pothole",
+      "file": "visualizations/spatial_heatmaps/pothole.png"
+    },
+    {
+      "class": "inlaid_patch",
+      "file": "visualizations/spatial_heatmaps/inlaid_patch.png"
+    },
+    {
+      "class": "open_joint",
+      "file": "visualizations/spatial_heatmaps/open_joint.png"
+    }
+  ]
+}

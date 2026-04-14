@@ -1,0 +1,239 @@
+{
+  "samples": [
+    {
+      "file": "sample_01_c3_crack-open_joint-street_inventory.jpg",
+      "source": "D:/PhD/Datasets/segmentation/GAPSv2/images\\_cam11_1431264863691_007569.jpg",
+      "classes": [
+        "crack",
+        "open_joint",
+        "street_inventory"
+      ],
+      "num_classes": 3,
+      "objects": 3,
+      "image_size": {
+        "width": 1280,
+        "height": 720
+      },
+      "resized_from": {
+        "width": 1920,
+        "height": 1080
+      },
+      "annotation_mode": "mask",
+      "annotation_format": "polygon",
+      "annotated_file": null,
+      "annotation_file": "annotations/sample_01_c3_crack-open_joint-street_inventory_annotation.polygons.json",
+      "slider_ready": true
+    },
+    {
+      "file": "sample_02_c2_crack-street_inventory.jpg",
+      "source": "D:/PhD/Datasets/segmentation/GAPSv2/images\\_cam11_1431264848673_007381.jpg",
+      "classes": [
+        "crack",
+        "street_inventory"
+      ],
+      "num_classes": 2,
+      "objects": 2,
+      "image_size": {
+        "width": 1280,
+        "height": 720
+      },
+      "resized_from": {
+        "width": 1920,
+        "height": 1080
+      },
+      "annotation_mode": "mask",
+      "annotation_format": "polygon",
+      "annotated_file": null,
+      "annotation_file": "annotations/sample_02_c2_crack-street_inventory_annotation.polygons.json",
+      "slider_ready": true
+    },
+    {
+      "file": "sample_03_c2_crack-inlaid_patch.jpg",
+      "source": "D:/PhD/Datasets/segmentation/GAPSv2/images\\_cam11_1431281595361_000220.jpg",
+      "classes": [
+        "crack",
+        "inlaid_patch"
+      ],
+      "num_classes": 2,
+      "objects": 2,
+      "image_size": {
+        "width": 1280,
+        "height": 720
+      },
+      "resized_from": {
+        "width": 1920,
+        "height": 1080
+      },
+      "annotation_mode": "mask",
+      "annotation_format": "polygon",
+      "annotated_file": null,
+      "annotation_file": "annotations/sample_03_c2_crack-inlaid_patch_annotation.polygons.json",
+      "slider_ready": true
+    },
+    {
+      "file": "sample_04_c3_applied_patch-crack-pothole.jpg",
+      "source": "D:/PhD/Datasets/segmentation/GAPSv2/images\\_cam12_1431281725240_001914.jpg",
+      "classes": [
+        "applied_patch",
+        "crack",
+        "pothole"
+      ],
+      "num_classes": 3,
+      "objects": 3,
+      "image_size": {
+        "width": 1280,
+        "height": 720
+      },
+      "resized_from": {
+        "width": 1920,
+        "height": 1080
+      },
+      "annotation_mode": "mask",
+      "annotation_format": "polygon",
+      "annotated_file": null,
+      "annotation_file": "annotations/sample_04_c3_applied_patch-crack-pothole_annotation.polygons.json",
+      "slider_ready": true
+    },
+    {
+      "file": "sample_05_c3_applied_patch-crack-street_inventory.jpg",
+      "source": "D:/PhD/Datasets/segmentation/GAPSv2/images\\_cam11_1431264656218_004039.jpg",
+      "classes": [
+        "applied_patch",
+        "crack",
+        "street_inventory"
+      ],
+      "num_classes": 3,
+      "objects": 3,
+      "image_size": {
+        "width": 1280,
+        "height": 720
+      },
+      "resized_from": {
+        "width": 1920,
+        "height": 1080
+      },
+      "annotation_mode": "mask",
+      "annotation_format": "polygon",
+      "annotated_file": null,
+      "annotation_file": "annotations/sample_05_c3_applied_patch-crack-street_inventory_annotation.polygons.json",
+      "slider_ready": true
+    },
+    {
+      "file": "sample_06_c2_crack-street_inventory.jpg",
+      "source": "D:/PhD/Datasets/segmentation/GAPSv2/images\\_cam12_1480601842166_002261.jpg",
+      "classes": [
+        "crack",
+        "street_inventory"
+      ],
+      "num_classes": 2,
+      "objects": 2,
+      "image_size": {
+        "width": 1280,
+        "height": 720
+      },
+      "resized_from": {
+        "width": 1920,
+        "height": 1080
+      },
+      "annotation_mode": "mask",
+      "annotation_format": "polygon",
+      "annotated_file": null,
+      "annotation_file": "annotations/sample_06_c2_crack-street_inventory_annotation.polygons.json",
+      "slider_ready": true
+    },
+    {
+      "file": "sample_07_c1_crack.jpg",
+      "source": "D:/PhD/Datasets/segmentation/GAPSv2/images\\_cam12_1480601708406_000506.jpg",
+      "classes": [
+        "crack"
+      ],
+      "num_classes": 1,
+      "objects": 1,
+      "image_size": {
+        "width": 1280,
+        "height": 720
+      },
+      "resized_from": {
+        "width": 1920,
+        "height": 1080
+      },
+      "annotation_mode": "mask",
+      "annotation_format": "polygon",
+      "annotated_file": null,
+      "annotation_file": "annotations/sample_07_c1_crack_annotation.polygons.json",
+      "slider_ready": true
+    },
+    {
+      "file": "sample_08_c3_crack-inlaid_patch-open_joint.jpg",
+      "source": "D:/PhD/Datasets/segmentation/GAPSv2/images\\_cam12_1431281588542_000159.jpg",
+      "classes": [
+        "crack",
+        "inlaid_patch",
+        "open_joint"
+      ],
+      "num_classes": 3,
+      "objects": 3,
+      "image_size": {
+        "width": 1280,
+        "height": 720
+      },
+      "resized_from": {
+        "width": 1920,
+        "height": 1080
+      },
+      "annotation_mode": "mask",
+      "annotation_format": "polygon",
+      "annotated_file": null,
+      "annotation_file": "annotations/sample_08_c3_crack-inlaid_patch-open_joint_annotation.polygons.json",
+      "slider_ready": true
+    },
+    {
+      "file": "sample_09_c3_applied_patch-crack-street_inventory.jpg",
+      "source": "D:/PhD/Datasets/segmentation/GAPSv2/images\\_cam11_1431264417468_000000.jpg",
+      "classes": [
+        "applied_patch",
+        "crack",
+        "street_inventory"
+      ],
+      "num_classes": 3,
+      "objects": 3,
+      "image_size": {
+        "width": 1280,
+        "height": 720
+      },
+      "resized_from": {
+        "width": 1920,
+        "height": 1080
+      },
+      "annotation_mode": "mask",
+      "annotation_format": "polygon",
+      "annotated_file": null,
+      "annotation_file": "annotations/sample_09_c3_applied_patch-crack-street_inventory_annotation.polygons.json",
+      "slider_ready": true
+    },
+    {
+      "file": "sample_10_c1_crack.jpg",
+      "source": "D:/PhD/Datasets/segmentation/GAPSv2/images\\_cam12_1431182296892_000314.jpg",
+      "classes": [
+        "crack"
+      ],
+      "num_classes": 1,
+      "objects": 1,
+      "image_size": {
+        "width": 1280,
+        "height": 720
+      },
+      "resized_from": {
+        "width": 1920,
+        "height": 1080
+      },
+      "annotation_mode": "mask",
+      "annotation_format": "polygon",
+      "annotated_file": null,
+      "annotation_file": "annotations/sample_10_c1_crack_annotation.polygons.json",
+      "slider_ready": true
+    }
+  ],
+  "count": 10,
+  "slider_pairs": 10
+}

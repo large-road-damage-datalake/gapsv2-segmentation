@@ -1,0 +1,19 @@
+{
+  "total_images": 2410,
+  "total_annotations": 4179,
+  "total_classes": 6,
+  "splits_breakdown": {
+    "data": {
+      "images": 2410,
+      "annotations": 4179,
+      "classes": {
+        "crack": 1884,
+        "street_inventory": 1479,
+        "applied_patch": 249,
+        "open_joint": 158,
+        "pothole": 244,
+        "inlaid_patch": 165
+      }
+    }
+  }
+}
