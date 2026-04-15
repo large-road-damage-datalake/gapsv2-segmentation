@@ -1,12 +1,14 @@
 # Download
 
-## Primary Download
+## Package Repository
 
-- Release assets: https://github.com/large-road-damage-datalake/dataset-id/releases
+- https://github.com/large-road-damage-datalake/dataset-id
 
 ## Original Source
 
-- Provide the original source URL(s) and licensing notes here.
+- Source repository or homepage:
+- Source download location:
+- Source license and usage constraints:
 
 ## Integrity
 

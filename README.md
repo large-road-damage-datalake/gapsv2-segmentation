@@ -14,7 +14,7 @@ GAPSv2 is a task-specific segmentation package derived from GAPs v2 with pixel-l
 
 - Name: German Asphalt Pavement Distress Dataset - GAPs v2
 - Source URL: https://www.tu-ilmenau.de/neurob/data-sets-code/german-asphalt-pavement-distress-dataset-gaps
-- Source paper: https://ieeexplore.ieee.org/abstract/document/7966101
+- Source paper: https://ieeexplore.ieee.org/document/8852257
 
 ## Access Requirement
 

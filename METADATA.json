@@ -141,42 +141,22 @@
   },
   "authors": [
     {
-      "name": "Markus Eisenbach",
-      "affiliation": "Ilmenau University of Technology",
-      "role": "Dataset Creator"
-    },
-    {
       "name": "Ronny Stricker",
       "affiliation": "Ilmenau University of Technology",
       "role": "Dataset Creator"
     },
     {
-      "name": "Daniel Seichter",
-      "affiliation": "Ilmenau University of Technology",
-      "role": "Dataset Creator"
-    },
-    {
-      "name": "Karl Amende",
-      "affiliation": "Ilmenau University of Technology",
-      "role": "Dataset Creator"
-    },
-    {
-      "name": "Klaus Debes",
+      "name": "Markus Eisenbach",
       "affiliation": "Ilmenau University of Technology",
       "role": "Dataset Creator"
     },
     {
       "name": "Maximilian Sesselmann",
-      "affiliation": "Ilmenau University of Technology",
+      "affiliation": "LEHMANN + PARTNER GmbH",
       "role": "Dataset Creator"
     },
     {
-      "name": "Dirk Ebersbach",
-      "affiliation": "Ilmenau University of Technology",
-      "role": "Dataset Creator"
-    },
-    {
-      "name": "Ulrike Stoeckert",
+      "name": "Klaus Debes",
       "affiliation": "Ilmenau University of Technology",
       "role": "Dataset Creator"
     },
@@ -190,13 +170,13 @@
   "links": {
     "github": "https://github.com/large-road-damage-datalake/gapsv2-segmentation",
     "download": "https://www.tu-ilmenau.de/neurob/data-sets-code/german-asphalt-pavement-distress-dataset-gaps",
-    "paper": "https://ieeexplore.ieee.org/abstract/document/7966101",
+    "paper": "https://ieeexplore.ieee.org/abstract/document/8852257",
     "homepage": "https://www.tu-ilmenau.de/neurob/data-sets-code/german-asphalt-pavement-distress-dataset-gaps",
     "request_form": "https://www.tu-ilmenau.de/fileadmin/Bereiche/IA/neurob/Datasets/Request-Gaps3.pdf",
     "request_email": "mailto:nikr-datasets-request@tu-ilmenau.de"
   },
   "citation": {
-    "bibtex": "@inproceedings{eisenbach2017how,\n  title = {How to Get Pavement Distress Detection Ready for Deep Learning? A Systematic Approach.},\n  author = {Eisenbach, Markus and Stricker, Ronny and Seichter, Daniel and Amende, Karl and Debes, Klaus and Sesselmann, Maximilian and Ebersbach, Dirk and Stoeckert, Ulrike and Gross, Horst-Michael},\n  booktitle = {International Joint Conference on Neural Networks (IJCNN)},\n  pages = {2039--2047},\n  year = {2017},\n  doi = {10.1109/IJCNN.2017.7966101},\n  url = {https://ieeexplore.ieee.org/abstract/document/7966101}\n}"
+    "bibtex": "@inproceedings{eisenbach2019improving,\n  title = {Improving Visual Road Condition Assessment by Extensive Experiments on the Extended GAPs Dataset},\n  author = {Stricker, Ronny and Eisenbach, Markus and and Sesselmann, Maximilian and Debes, Klaus and Gross, Horst-Michael},\n  booktitle = {International Joint Conference on Neural Networks (IJCNN)},\n  pages = {2039--2047},\n  year = {2019},\n  doi = {10.1109/IJCNN.2019.8852257},\n  url = {https://ieeexplore.ieee.org/abstract/document/8852257}\n}"
   },
   "tags": [
     "segmentation",
@@ -209,9 +189,9 @@
   ],
   "source_publication": {
     "dataset_doi": "Not provided",
-    "article_doi": "10.1109/IJCNN.2017.7966101",
-    "article_title": "How to Get Pavement Distress Detection Ready for Deep Learning? A Systematic Approach.",
-    "journal": "2017 International Joint Conference on Neural Networks (IJCNN)",
-    "year": 2017
+    "article_doi": "10.1109/IJCNN.2019.8852257",
+    "article_title": "Improving Visual Road Condition Assessment by Extensive Experiments on the Extended GAPs Dataset",
+    "journal": "2019 International Joint Conference on Neural Networks (IJCNN)",
+    "year": 2019
   }
 }

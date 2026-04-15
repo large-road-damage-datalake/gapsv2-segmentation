@@ -1,8 +1,7 @@
 # License
 
-This benchmark package metadata and generated analytics are released under:
+This dataset package metadata and generated analytics are released under:
 
-- CC BY 4.0 (recommended)
-- or dataset-specific compatible license
+- [REPLACE_WITH_LICENSE_NAME]
 
-Replace this file with the exact license terms used by your dataset package.
+Replace this file with exact licensing terms and any source-dataset restrictions.
