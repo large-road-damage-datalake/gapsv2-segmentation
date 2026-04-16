@@ -16,12 +16,8 @@
       "segmentation"
     ],
     "damage_types": [
-      "applied_patch",
       "crack",
-      "inlaid_patch",
-      "open_joint",
-      "pothole",
-      "street_inventory"
+      "pothole"
     ],
     "task_classification": {
       "primary_task": "segmentation",
@@ -31,7 +27,8 @@
     "task_subtype": "semantic_segmentation",
     "family_name": "GAPs",
     "subset_name": "v2",
-    "family_description": "GAPs is a German top-down pavement distress dataset family with segmentation labels across multiple subsets (for example 384, v2, and 10m)."
+    "family_description": "GAPs is a German top-down pavement distress dataset family with segmentation labels across multiple subsets (for example 384, v2, and 10m).",
+    "label_taxonomy_version": "road_damage_v1"
   },
   "imaging_setup": {
     "camera": "Surface camera system on certified mobile mapping vehicle",
@@ -58,37 +55,49 @@
           "id": 1,
           "name": "applied_patch",
           "description": "GAPSv2 class: applied_patch",
-          "color": "#294F71"
+          "color": "#294F71",
+          "canonical_name": "patch.applied",
+          "instances": 249
         },
         {
           "id": 2,
           "name": "crack",
           "description": "GAPSv2 class: crack",
-          "color": "#529EE2"
+          "color": "#529EE2",
+          "canonical_name": "crack",
+          "instances": 1884
         },
         {
           "id": 3,
           "name": "inlaid_patch",
           "description": "GAPSv2 class: inlaid_patch",
-          "color": "#7BED54"
+          "color": "#7BED54",
+          "canonical_name": "patch.inlaid",
+          "instances": 165
         },
         {
           "id": 4,
           "name": "open_joint",
           "description": "GAPSv2 class: open_joint",
-          "color": "#A43DC5"
+          "color": "#A43DC5",
+          "canonical_name": "joint.open",
+          "instances": 158
         },
         {
           "id": 5,
           "name": "pothole",
           "description": "GAPSv2 class: pothole",
-          "color": "#CD8C37"
+          "color": "#CD8C37",
+          "canonical_name": "pothole",
+          "instances": 244
         },
         {
           "id": 6,
           "name": "street_inventory",
           "description": "GAPSv2 class: street_inventory",
-          "color": "#F6DBA8"
+          "color": "#F6DBA8",
+          "canonical_name": "context.street_inventory",
+          "instances": 1479
         }
       ]
     }
@@ -113,7 +122,7 @@
     "split": {
       "data": {
         "n_images": 2410,
-        "percentage": 1.0,
+        "percentage": 1,
         "n_images_with_annotations": 2273,
         "annotation_coverage": 0.9432,
         "dataset_size": "1.60 GB",
@@ -193,5 +202,112 @@
     "article_title": "Improving Visual Road Condition Assessment by Extensive Experiments on the Extended GAPs Dataset",
     "journal": "2019 International Joint Conference on Neural Networks (IJCNN)",
     "year": 2019
+  },
+  "class_taxonomy": {
+    "version": "road_damage_v1",
+    "classes": [
+      {
+        "canonical_name": "context.street_inventory",
+        "display_name": "Street Inventory",
+        "damage_family": "context_non_damage",
+        "damage_subtype": "street_inventory",
+        "role": "context",
+        "is_damage_target": false,
+        "aliases": [
+          "street_inventory"
+        ],
+        "source_labels": [
+          "street_inventory"
+        ],
+        "taxonomy_source": "registry",
+        "taxonomy_unresolved": false
+      },
+      {
+        "canonical_name": "crack",
+        "display_name": "Crack",
+        "damage_family": "crack",
+        "damage_subtype": "generic",
+        "role": "damage_target",
+        "is_damage_target": true,
+        "aliases": [
+          "crack",
+          "cracked"
+        ],
+        "source_labels": [
+          "crack"
+        ],
+        "taxonomy_source": "registry",
+        "taxonomy_unresolved": false
+      },
+      {
+        "canonical_name": "joint.open",
+        "display_name": "Open Joint",
+        "damage_family": "joint_distress",
+        "damage_subtype": "open_joint",
+        "role": "context",
+        "is_damage_target": false,
+        "aliases": [
+          "open_joint"
+        ],
+        "source_labels": [
+          "open_joint"
+        ],
+        "taxonomy_source": "registry",
+        "taxonomy_unresolved": false
+      },
+      {
+        "canonical_name": "patch.applied",
+        "display_name": "Applied Patch",
+        "damage_family": "patch_repair",
+        "damage_subtype": "applied",
+        "role": "repair",
+        "is_damage_target": false,
+        "aliases": [
+          "applied_patch"
+        ],
+        "source_labels": [
+          "applied_patch"
+        ],
+        "taxonomy_source": "registry",
+        "taxonomy_unresolved": false
+      },
+      {
+        "canonical_name": "patch.inlaid",
+        "display_name": "Inlaid Patch",
+        "damage_family": "patch_repair",
+        "damage_subtype": "inlaid",
+        "role": "repair",
+        "is_damage_target": false,
+        "aliases": [
+          "inlaid_patch"
+        ],
+        "source_labels": [
+          "inlaid_patch"
+        ],
+        "taxonomy_source": "registry",
+        "taxonomy_unresolved": false
+      },
+      {
+        "canonical_name": "pothole",
+        "display_name": "Pothole",
+        "damage_family": "pothole",
+        "damage_subtype": "generic",
+        "role": "damage_target",
+        "is_damage_target": true,
+        "aliases": [
+          "pothole"
+        ],
+        "source_labels": [
+          "pothole"
+        ],
+        "taxonomy_source": "registry",
+        "taxonomy_unresolved": false
+      }
+    ],
+    "damage_types": [
+      "crack",
+      "pothole"
+    ],
+    "unresolved_labels": []
   }
 }
