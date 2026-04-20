@@ -204,7 +204,7 @@
     "year": 2019
   },
   "class_taxonomy": {
-    "version": "road_damage_v1",
+    "version": "road_damage_v2",
     "classes": [
       {
         "canonical_name": "context.street_inventory",
@@ -212,6 +212,9 @@
         "damage_family": "context_non_damage",
         "damage_subtype": "street_inventory",
         "role": "context",
+        "semantic_role": "non_road_context",
+        "training_role": "context",
+        "status": "dataset_specific",
         "is_damage_target": false,
         "aliases": [
           "street_inventory"
@@ -219,8 +222,10 @@
         "source_labels": [
           "street_inventory"
         ],
-        "taxonomy_source": "registry",
-        "taxonomy_unresolved": false
+        "taxonomy_source": "codebook_specialized",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
       },
       {
         "canonical_name": "crack",
@@ -228,6 +233,9 @@
         "damage_family": "crack",
         "damage_subtype": "generic",
         "role": "damage_target",
+        "semantic_role": "damage",
+        "training_role": "target",
+        "status": "stable",
         "is_damage_target": true,
         "aliases": [
           "crack",
@@ -236,8 +244,10 @@
         "source_labels": [
           "crack"
         ],
-        "taxonomy_source": "registry",
-        "taxonomy_unresolved": false
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
       },
       {
         "canonical_name": "joint.open",
@@ -245,6 +255,9 @@
         "damage_family": "joint_distress",
         "damage_subtype": "open_joint",
         "role": "context",
+        "semantic_role": "road_feature",
+        "training_role": "context",
+        "status": "provisional",
         "is_damage_target": false,
         "aliases": [
           "open_joint"
@@ -252,8 +265,10 @@
         "source_labels": [
           "open_joint"
         ],
-        "taxonomy_source": "registry",
-        "taxonomy_unresolved": false
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
       },
       {
         "canonical_name": "patch.applied",
@@ -261,6 +276,9 @@
         "damage_family": "patch_repair",
         "damage_subtype": "applied",
         "role": "repair",
+        "semantic_role": "repair",
+        "training_role": "context",
+        "status": "stable",
         "is_damage_target": false,
         "aliases": [
           "applied_patch"
@@ -268,8 +286,10 @@
         "source_labels": [
           "applied_patch"
         ],
-        "taxonomy_source": "registry",
-        "taxonomy_unresolved": false
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
       },
       {
         "canonical_name": "patch.inlaid",
@@ -277,6 +297,9 @@
         "damage_family": "patch_repair",
         "damage_subtype": "inlaid",
         "role": "repair",
+        "semantic_role": "repair",
+        "training_role": "context",
+        "status": "stable",
         "is_damage_target": false,
         "aliases": [
           "inlaid_patch"
@@ -284,8 +307,10 @@
         "source_labels": [
           "inlaid_patch"
         ],
-        "taxonomy_source": "registry",
-        "taxonomy_unresolved": false
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
       },
       {
         "canonical_name": "pothole",
@@ -293,6 +318,9 @@
         "damage_family": "pothole",
         "damage_subtype": "generic",
         "role": "damage_target",
+        "semantic_role": "damage",
+        "training_role": "target",
+        "status": "stable",
         "is_damage_target": true,
         "aliases": [
           "pothole"
@@ -300,8 +328,10 @@
         "source_labels": [
           "pothole"
         ],
-        "taxonomy_source": "registry",
-        "taxonomy_unresolved": false
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
       }
     ],
     "damage_types": [
