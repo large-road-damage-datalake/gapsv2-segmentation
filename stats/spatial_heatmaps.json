@@ -11,16 +11,16 @@
       "file": "visualizations/spatial_heatmaps/street_inventory.png"
     },
     {
-      "class": "applied_patch",
-      "file": "visualizations/spatial_heatmaps/applied_patch.png"
-    },
-    {
       "class": "pothole",
       "file": "visualizations/spatial_heatmaps/pothole.png"
     },
     {
       "class": "inlaid_patch",
       "file": "visualizations/spatial_heatmaps/inlaid_patch.png"
+    },
+    {
+      "class": "applied_patch",
+      "file": "visualizations/spatial_heatmaps/applied_patch.png"
     },
     {
       "class": "open_joint",

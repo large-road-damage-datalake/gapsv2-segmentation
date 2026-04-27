@@ -1,18 +1,34 @@
 {
   "total_images": 2410,
-  "total_annotations": 4179,
+  "total_annotations": 12107,
   "total_classes": 6,
+  "annotated_images": 2273,
+  "annotation_coverage": 0.9431535269709543,
+  "image_resolution_histogram": {
+    "1920x1080": 2410
+  },
+  "resolution_details": [
+    {
+      "resolution": "1920x1080",
+      "count": 2410
+    }
+  ],
   "splits_breakdown": {
     "data": {
       "images": 2410,
-      "annotations": 4179,
+      "annotations": 12107,
+      "annotated_images": 2273,
+      "annotation_coverage": 0.9431535269709543,
       "classes": {
-        "crack": 1884,
-        "street_inventory": 1479,
-        "applied_patch": 249,
-        "open_joint": 158,
-        "pothole": 244,
-        "inlaid_patch": 165
+        "crack": 8398,
+        "street_inventory": 2320,
+        "open_joint": 271,
+        "applied_patch": 331,
+        "pothole": 442,
+        "inlaid_patch": 345
+      },
+      "image_resolution_histogram": {
+        "1920x1080": 2410
       }
     }
   }

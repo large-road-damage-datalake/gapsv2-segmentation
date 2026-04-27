@@ -8,7 +8,7 @@
     "year": 2019,
     "family_name": "GAPs",
     "subset_name": "v2",
-    "family_description": "GAPs is a German top-down pavement distress dataset family with segmentation labels across multiple subsets (for example 384, v2, and 10m)."
+    "family_description": "GAPs is a German top-down pavement distress dataset family with segmentation labels across multiple subsets (GAPs384, GAPsV2, and GAPs10m)."
   },
   "project_context": {
     "task": "segmentation",
@@ -23,12 +23,12 @@
       "primary_task": "segmentation",
       "task_subtype": "semantic_segmentation"
     },
+    "label_taxonomy_version": "road_damage_v2",
     "segmentation_type": "semantic_segmentation",
     "task_subtype": "semantic_segmentation",
     "family_name": "GAPs",
     "subset_name": "v2",
-    "family_description": "GAPs is a German top-down pavement distress dataset family with segmentation labels across multiple subsets (for example 384, v2, and 10m).",
-    "label_taxonomy_version": "road_damage_v1"
+    "family_description": "GAPs is a German top-down pavement distress dataset family with segmentation labels across multiple subsets (GAPs384, GAPsV2, and GAPs10m)."
   },
   "imaging_setup": {
     "camera": "Surface camera system on certified mobile mapping vehicle",
@@ -44,6 +44,20 @@
         "resolution": "1920x1080",
         "count": 2410
       }
+    ],
+    "resolution_by_country": [
+      {
+        "name": "Germany",
+        "resolutions": [
+          "1920x1080"
+        ],
+        "resolution_details": [
+          {
+            "resolution": "1920x1080",
+            "count": 2410
+          }
+        ]
+      }
     ]
   },
   "annotation_schema": [
@@ -57,7 +71,7 @@
           "description": "GAPSv2 class: applied_patch",
           "color": "#294F71",
           "canonical_name": "patch.applied",
-          "instances": 249
+          "instances": 331
         },
         {
           "id": 2,
@@ -65,7 +79,7 @@
           "description": "GAPSv2 class: crack",
           "color": "#529EE2",
           "canonical_name": "crack",
-          "instances": 1884
+          "instances": 8398
         },
         {
           "id": 3,
@@ -73,7 +87,7 @@
           "description": "GAPSv2 class: inlaid_patch",
           "color": "#7BED54",
           "canonical_name": "patch.inlaid",
-          "instances": 165
+          "instances": 345
         },
         {
           "id": 4,
@@ -81,7 +95,7 @@
           "description": "GAPSv2 class: open_joint",
           "color": "#A43DC5",
           "canonical_name": "joint.open",
-          "instances": 158
+          "instances": 271
         },
         {
           "id": 5,
@@ -89,7 +103,7 @@
           "description": "GAPSv2 class: pothole",
           "color": "#CD8C37",
           "canonical_name": "pothole",
-          "instances": 244
+          "instances": 442
         },
         {
           "id": 6,
@@ -97,115 +111,39 @@
           "description": "GAPSv2 class: street_inventory",
           "color": "#F6DBA8",
           "canonical_name": "context.street_inventory",
-          "instances": 1479
+          "instances": 2320
         }
       ]
     }
   ],
-  "statistics": {
-    "n_images": 2410,
-    "n_annotations": 4179,
-    "n_images_with_annotations": 2273,
-    "average_annotations_per_image": 1.7340248962655602,
-    "dataset_size": "1.60 GB",
-    "dataset_size_bytes": 1719996471,
-    "dataset_file_count": 4820,
-    "image_format": "png_masks",
-    "class_distribution": {
-      "crack": 1884,
-      "street_inventory": 1479,
-      "applied_patch": 249,
-      "open_joint": 158,
-      "pothole": 244,
-      "inlaid_patch": 165
-    },
-    "split": {
-      "data": {
-        "n_images": 2410,
-        "percentage": 1,
-        "n_images_with_annotations": 2273,
-        "annotation_coverage": 0.9432,
-        "dataset_size": "1.60 GB",
-        "dataset_size_bytes": 1719996471,
-        "dataset_file_count": 4820
-      }
-    }
-  },
-  "geographic_coverage": {
-    "countries": [
-      {
-        "name": "Germany",
-        "image_count": 2410,
-        "annotated_image_count": 2273,
-        "annotation_coverage": 0.9432
-      }
-    ],
-    "temporal_scope": "GAPs v2 release available by 2019"
-  },
-  "quality_assurance": {
-    "annotation_quality": "Pixel-level masks provided by the official GAPs v2 segmentation release",
-    "inter_annotator_agreement": "Not reported",
-    "review_status": "Published benchmark dataset",
-    "data_acquisition_notes": "Source website describes BASt-certified road monitoring workflow and mobile mapping acquisition process."
-  },
-  "authors": [
-    {
-      "name": "Ronny Stricker",
-      "affiliation": "Ilmenau University of Technology",
-      "role": "Dataset Creator"
-    },
-    {
-      "name": "Markus Eisenbach",
-      "affiliation": "Ilmenau University of Technology",
-      "role": "Dataset Creator"
-    },
-    {
-      "name": "Maximilian Sesselmann",
-      "affiliation": "LEHMANN + PARTNER GmbH",
-      "role": "Dataset Creator"
-    },
-    {
-      "name": "Klaus Debes",
-      "affiliation": "Ilmenau University of Technology",
-      "role": "Dataset Creator"
-    },
-    {
-      "name": "Horst-Michael Gross",
-      "affiliation": "Ilmenau University of Technology",
-      "role": "Dataset Creator"
-    }
-  ],
-  "license": "Academic use only; access requires written permission and provider-issued login",
-  "links": {
-    "github": "https://github.com/large-road-damage-datalake/gapsv2-segmentation",
-    "download": "https://www.tu-ilmenau.de/neurob/data-sets-code/german-asphalt-pavement-distress-dataset-gaps",
-    "paper": "https://ieeexplore.ieee.org/abstract/document/8852257",
-    "homepage": "https://www.tu-ilmenau.de/neurob/data-sets-code/german-asphalt-pavement-distress-dataset-gaps",
-    "request_form": "https://www.tu-ilmenau.de/fileadmin/Bereiche/IA/neurob/Datasets/Request-Gaps3.pdf",
-    "request_email": "mailto:nikr-datasets-request@tu-ilmenau.de"
-  },
-  "citation": {
-    "bibtex": "@inproceedings{eisenbach2019improving,\n  title = {Improving Visual Road Condition Assessment by Extensive Experiments on the Extended GAPs Dataset},\n  author = {Stricker, Ronny and Eisenbach, Markus and and Sesselmann, Maximilian and Debes, Klaus and Gross, Horst-Michael},\n  booktitle = {International Joint Conference on Neural Networks (IJCNN)},\n  pages = {2039--2047},\n  year = {2019},\n  doi = {10.1109/IJCNN.2019.8852257},\n  url = {https://ieeexplore.ieee.org/abstract/document/8852257}\n}"
-  },
-  "tags": [
-    "segmentation",
-    "gapsv2",
-    "multiclass-mask",
-    "road-distress",
-    "germany",
-    "top-down",
-    "permission-required"
-  ],
-  "source_publication": {
-    "dataset_doi": "Not provided",
-    "article_doi": "10.1109/IJCNN.2019.8852257",
-    "article_title": "Improving Visual Road Condition Assessment by Extensive Experiments on the Extended GAPs Dataset",
-    "journal": "2019 International Joint Conference on Neural Networks (IJCNN)",
-    "year": 2019
-  },
   "class_taxonomy": {
     "version": "road_damage_v2",
     "classes": [
+      {
+        "canonical_name": "class.negative",
+        "display_name": "Negative",
+        "damage_family": "non_damage",
+        "damage_subtype": "negative",
+        "role": "negative",
+        "semantic_role": "absence",
+        "training_role": "negative",
+        "status": "stable",
+        "is_damage_target": false,
+        "aliases": [
+          "void",
+          "intact_road",
+          "normal",
+          "background"
+        ],
+        "source_labels": [
+          "void",
+          "intact_road"
+        ],
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
+      },
       {
         "canonical_name": "context.street_inventory",
         "display_name": "Street Inventory",
@@ -251,9 +189,9 @@
       },
       {
         "canonical_name": "joint.open",
-        "display_name": "Open Joint",
+        "display_name": "Open",
         "damage_family": "joint_distress",
-        "damage_subtype": "open_joint",
+        "damage_subtype": "open",
         "role": "context",
         "semantic_role": "road_feature",
         "training_role": "context",
@@ -272,7 +210,7 @@
       },
       {
         "canonical_name": "patch.applied",
-        "display_name": "Applied Patch",
+        "display_name": "Applied",
         "damage_family": "patch_repair",
         "damage_subtype": "applied",
         "role": "repair",
@@ -293,7 +231,7 @@
       },
       {
         "canonical_name": "patch.inlaid",
-        "display_name": "Inlaid Patch",
+        "display_name": "Inlaid",
         "damage_family": "patch_repair",
         "damage_subtype": "inlaid",
         "role": "repair",
@@ -339,5 +277,106 @@
       "pothole"
     ],
     "unresolved_labels": []
+  },
+  "statistics": {
+    "n_images": 2410,
+    "n_annotations": 12107,
+    "n_images_with_annotations": 2273,
+    "average_annotations_per_image": 5.023651452282158,
+    "dataset_size": "1.60 GB",
+    "dataset_size_bytes": 1719996471,
+    "dataset_file_count": 4820,
+    "image_format": "png_masks",
+    "class_distribution": {
+      "crack": 8398,
+      "street_inventory": 2320,
+      "open_joint": 271,
+      "applied_patch": 331,
+      "pothole": 442,
+      "inlaid_patch": 345
+    },
+    "split": {
+      "data": {
+        "n_images": 2410,
+        "percentage": 1.0,
+        "n_images_with_annotations": 2273,
+        "annotation_coverage": 0.9432,
+        "dataset_size": "1.60 GB",
+        "dataset_size_bytes": 1719996471,
+        "dataset_file_count": 4820
+      }
+    }
+  },
+  "geographic_coverage": {
+    "countries": [
+      {
+        "name": "Germany",
+        "image_count": 2410,
+        "annotated_image_count": 2273,
+        "annotation_coverage": 0.9432
+      }
+    ],
+    "temporal_scope": "GAPs v2 release available by 2019"
+  },
+  "quality_assurance": {
+    "annotation_quality": "Pixel-level masks provided by the official GAPs v2 segmentation release",
+    "inter_annotator_agreement": "Not reported",
+    "review_status": "Published benchmark dataset",
+    "data_acquisition_notes": "Source website describes BASt-certified road monitoring workflow and mobile mapping acquisition process."
+  },
+  "authors": [
+    {
+      "name": "Ronny Stricker",
+      "affiliation": "Ilmenau University of Technology",
+      "role": "Dataset Creator"
+    },
+    {
+      "name": "Markus Eisenbach",
+      "affiliation": "Ilmenau University of Technology",
+      "role": "Dataset Creator"
+    },
+    {
+      "name": "Maximilian Sesselmann",
+      "affiliation": "Ilmenau University of Technology",
+      "role": "Dataset Creator"
+    },
+    {
+      "name": "Klaus Debes",
+      "affiliation": "Ilmenau University of Technology",
+      "role": "Dataset Creator"
+    },
+    {
+      "name": "Horst-Michael Gross",
+      "affiliation": "Ilmenau University of Technology",
+      "role": "Dataset Creator"
+    }
+  ],
+  "license": "Academic use only; access requires written permission and provider-issued login",
+  "links": {
+    "github": "https://github.com/large-road-damage-datalake/gapsv2-segmentation",
+    "download": "https://www.tu-ilmenau.de/neurob/data-sets-code/german-asphalt-pavement-distress-dataset-gaps",
+    "paper": "https://ieeexplore.ieee.org/document/8852257",
+    "homepage": "https://www.tu-ilmenau.de/neurob/data-sets-code/german-asphalt-pavement-distress-dataset-gaps",
+    "request_form": "https://www.tu-ilmenau.de/fileadmin/Bereiche/IA/neurob/Datasets/Request-Gaps3.pdf",
+    "request_email": "mailto:nikr-datasets-request@tu-ilmenau.de"
+  },
+  "citation": {
+    "bibtex": "@inproceedings{eisenbach2019improving,\n  title = {Improving Visual Road Condition Assessment by Extensive Experiments on the Extended GAPs Dataset},\n  author = {Stricker, Ronny and Eisenbach, Markus and and Sesselmann, Maximilian and Debes, Klaus and Gross, Horst-Michael},\n  booktitle = {International Joint Conference on Neural Networks (IJCNN)},\n  pages = {2039--2047},\n  year = {2019},\n  doi = {10.1109/IJCNN.2019.8852257},\n  url = {https://ieeexplore.ieee.org/document/8852257}\n}"
+  },
+  "tags": [
+    "segmentation",
+    "gapsv2",
+    "multiclass-mask",
+    "road-distress",
+    "germany",
+    "top-down",
+    "permission-required"
+  ],
+  "source_publication": {
+    "dataset_doi": "Not provided",
+    "article_doi": "10.1109/IJCNN.2019.8852257",
+    "article_title": "Improving Visual Road Condition Assessment by Extensive Experiments on the Extended GAPs Dataset",
+    "journal": "2019 International Joint Conference on Neural Networks (IJCNN)",
+    "year": 2019
   }
 }

@@ -6,7 +6,7 @@ GAPSv2 is a task-specific segmentation package derived from GAPs v2 with pixel-l
 
 - Task: segmentation
 - Images: 2410
-- Annotations: 4179
+- Annotations: 12107
 - Classes in local package stats: 6 (applied_patch, crack, inlaid_patch, open_joint, pothole, street_inventory)
 - Annotation format: grayscale PNG masks (class-coded)
 

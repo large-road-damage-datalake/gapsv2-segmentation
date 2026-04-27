@@ -13,16 +13,16 @@
           "y": 6.6989
         },
         {
-          "x": "applied_patch",
-          "y": 3.1397
-        },
-        {
           "x": "pothole",
           "y": 0.7909
         },
         {
           "x": "inlaid_patch",
           "y": 3.2063
+        },
+        {
+          "x": "applied_patch",
+          "y": 3.1909
         },
         {
           "x": "open_joint",
